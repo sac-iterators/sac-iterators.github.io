@@ -1,0 +1,23 @@
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+*{
+    box-sizing: border-box;
+}
+img {
+    width: 65%;
+    height: 4rem;
+    padding: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.column{
+        float: left;
+        width: 33.33%;
+        padding: 3px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+}
+
